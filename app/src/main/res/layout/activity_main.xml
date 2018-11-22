@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="319dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/lalla" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ET_input"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ffff"
+            android:hint="0 Rp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/TV_output"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#ffff"
+            android:paddingLeft="10dp"
+            android:text="Hasil Konversi"
+            android:textSize="18sp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/RpToYen"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="toYen"
+            android:text="Rp -> Yen"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/RpToPounds"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="toPounds"
+            android:text="Rp -> Pounds"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutAturButton2"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/RpToUSD"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="toUSD"
+            android:text="Rp -> USD"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/RpToEuro"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="toEuro"
+            android:text="Rp -> Euro"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
